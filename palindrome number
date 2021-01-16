@@ -1,0 +1,25 @@
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        # print(x%10); # remainder
+        # print(x/10); # returns greatest integer
+        rev = "";
+        x1 = None;
+        temp = x;
+        if(x<0):
+            return False;
+        elif(x==0):
+            return True;
+        else:
+            while(temp/10 != 0 or temp!=0):
+                x1 = temp % 10;
+                rev =  str(rev) + str(x1);
+                #print(rev);
+                temp = temp/10;
+            if(rev == str(x)):
+                return True;
+            else:
+                return False;
