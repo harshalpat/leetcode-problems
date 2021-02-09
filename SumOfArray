@@ -1,0 +1,24 @@
+
+public class arraySum {
+
+	public static void main(String[] args) {
+		
+		int strArray[];
+		strArray = new int[] {11,12,13,14,16};
+		int total = sum(strArray);
+		System.out.print(total);
+		
+	}
+		
+	public static int sum(int[] strArray) {
+		
+		int sum = 0;
+		
+		for ( int i = 0; i < strArray.length; i++ ) 
+			sum = sum + strArray[i];	
+		return sum;
+	}
+
+}
+
+
