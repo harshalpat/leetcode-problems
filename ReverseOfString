@@ -1,0 +1,20 @@
+// Java program to reverse a string  using StringBuilder
+public class reversed {
+
+	public static void main(String[] args) {
+		
+		String str = "this has to be reversed!";
+		
+		// create object to stringBuilder class
+		StringBuilder s = new StringBuilder();
+		
+		// append the string using StringBuilder object
+		s.append(str);
+		//System.out.println(s);
+		
+		StringBuilder rev = s.reverse();
+		System.out.print(rev);
+
+	}
+
+}
