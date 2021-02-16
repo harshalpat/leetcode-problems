@@ -1,0 +1,18 @@
+"""
+Created on Tue Feb 16 16:24:18 2021
+
+@author: harshal
+"""
+
+# [1,2,3,4,5,6,7,8]
+# [1,3,6,10,15,21,27,35]
+
+def sumOfDigits(n):
+    
+    if(n==1):
+        return n
+    else:
+        # number (example 5) + number -1 (5-1 = 4).....unitl 1 appears
+        return  n + sumOfDigits(n-1)
+    
+print(sumOfDigits(5))
