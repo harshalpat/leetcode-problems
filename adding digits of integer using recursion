@@ -1,0 +1,22 @@
+"""
+Created on Tue Feb 16 17:28:32 2021
+
+@author: harshal
+"""
+
+# python code to add the number of digits of the number entered
+
+# ex. 112 = 1+ 1 +2 => 4
+
+def addingDigits(n):
+    
+    if(n < 0): 
+        return "entered number is less than 0"
+    elif(n==1 or n==0):
+        return n
+    else:
+        n1 = n % 10
+        n2 = n // 10
+        return n1 + addingDigits(n2)
+    
+print(addingDigits(12345))
