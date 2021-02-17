@@ -3,6 +3,13 @@ Created on Tue Feb 16 22:49:24 2021
 
 @author: harshal
 """
+# using euclidian algorithm to find the gcd of 2 numbers!
+# examaple gcd(48,18)
+# step 1: 48/18 = 2 and remainder is 12
+# step 2: 18/12 = 1 and remainder is 6
+# step 3: 12/6 = 2 and remainder is 0
+# when remainder is '0', then '6' is said to be gcd of 48 and 18.
+
 
 def gcd(a,b):
     assert a == int(a) and b == int(b), "a,b must be integers"
