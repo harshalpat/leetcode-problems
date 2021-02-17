@@ -1,0 +1,16 @@
+"""
+Created on Tue Feb 16 18:37:20 2021
+
+@author: harshal
+"""
+
+def power(base, power):
+    assert power>0 and base>1, "this is invalid condition or negative values entered"
+    if(base == 1):
+        return base
+    if(power == 0):
+        return 1
+    else:
+        return pow(base,power-1)
+
+print(power(3,5))
