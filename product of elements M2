@@ -1,0 +1,15 @@
+"""
+Created on Wed Feb 17 15:57:59 2021
+
+@author: harshal
+"""
+# a=[1,2,3,4,5]
+
+def productOfArray(arr,k):
+    if(k==0):
+        return arr[0]
+    else:
+        return arr[k] * productOfArray(arr,k-1)
+
+a = [1,2,3,4,5]  
+print(productOfArray(a,len(a)-1))
