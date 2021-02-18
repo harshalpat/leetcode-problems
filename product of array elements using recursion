@@ -1,0 +1,16 @@
+"""
+Created on Wed Feb 17 13:41:24 2021
+
+@author: harshal
+"""
+
+# arr = [1,2,3,4,5]
+
+def productOfArray(arr):
+    if(len(arr)==1):
+        return arr[0]
+    else:
+        return arr.pop() * productOfArray(arr)
+
+a = [1,2,3,4,5]  
+print(productOfArray(a))
