@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar  2 14:37:32 2021
+
+@author: harshal
+"""
+
+def getNewString(arr):
+    for i in range(len(arr)):
+        s=''
+        for j in arr[i]:
+            # print(j,end='')
+            s += s.join(chr(ord(j)+1))
+        print(str(s))
+        t.append(s)
+    print(t)
+        
+t=[]
+          
+getNewString(['har','pat','nicks'])
