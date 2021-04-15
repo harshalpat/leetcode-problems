@@ -1,0 +1,16 @@
+principle = float(input("Enter amount: "));
+#print(num);
+
+interest = float(input("Enter the interest: "));
+
+years = float(input("Enter number of years: "));
+
+def compoundInterest(principle, interest, years):
+  
+    # Calculates compound interest 
+    Amount = principle * (pow((1 + interest / 100), years))
+    CI = Amount - principle
+    print(Amount);
+  
+# Driver Code 
+compoundInterest(principle, interest, years);
